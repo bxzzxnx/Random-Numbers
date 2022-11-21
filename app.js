@@ -38,7 +38,7 @@ const correctNumber = () => {
 
 form.addEventListener('submit', event => {
     event.preventDefault();
-    const notAValidNumber = userInput.value < 1 || userInput.value > 100 || userInput.value.length > 3;
+    const notAValidNumber = userInput.value < 1 || userInput.value > 100;
     if(notAValidNumber){
         document.querySelector('.feedback').textContent = 'Insira um valor de 1 a 100'
         userInput.value = ''
